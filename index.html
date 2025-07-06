@@ -3,210 +3,687 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Drishya Ajith - BTech CSE Student, Software Developer, and Community Leader">
-    <meta name="keywords" content="portfolio, software developer, student, community leader, technology">
+    <meta name="description" content="Drishya Ajith - Computer Science Engineering Student & Tech Enthusiast. Portfolio showcasing technical skills, projects, and achievements.">
+    <meta name="keywords" content="Drishya Ajith, Computer Science, Engineering, Portfolio, Tech Enthusiast, Web Development">
     <meta name="author" content="Drishya Ajith">
+    <meta property="og:title" content="Drishya Ajith - Portfolio">
+    <meta property="og:description" content="Computer Science Engineering Student & Tech Enthusiast">
+    <meta property="og:type" content="website">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Drishya Ajith - Portfolio</title>
 </head>
 <body>
-    <header class="header">
-        <a href="#home" class="logo">
-            <span>Drishya</span>
-        </a>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Drishya Ajith</div>
+        </div>
+    </div>
 
-        <i class="fa fa-bars" id="menu-icons"></i>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, it's <span>Drishya</span></h1>
-            <h3 class="text-animation">I'm a <span></span></h3>
-            <p>BTech CSE student passionate about creating inclusive spaces where technology, creativity, and social good meet. I work to empower students and advocate for gender equity in tech.</p>
-            <p>Actively involved with communities like Tinkerhub, Global Shapers, Young Indians YUVA, and IEEE, contributing through event curation, peer mentoring, and knowledge-sharing initiatives.</p>
-            <p>When I'm not building or learning tech, you'll find me immersed in Bharatanatyam, exploring new ideas, or connecting with people.</p>   
-            <p>✨ Always curious. Always creating.</p>   
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/drishyaajith/" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/DrishyaAjith10" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a> 
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span>Drishya</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#leadership" class="nav-link">Leadership</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="btn-group">
-                <a href="#" class="btn">Download CV</a>
-                <a href="#contact" class="btn">Contact</a>
+
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
+    </nav>
 
-        <div class="home-img">
-            <img src="main.jpg" alt="Drishya Ajith - Professional headshot">
-        </div>
-    </section>
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
 
-    <section id="skills" class="skills">
-        <h2 class="heading">Skills</h2>
-        <div class="skills-container">
-            <div class="skills-circle">
-                <div class="skills-center">Skills</div>
-                <div class="skill-item-3d">Python</div>
-                <div class="skill-item-3d">C++</div>
-                <div class="skill-item-3d">Java</div>
-                <div class="skill-item-3d">CSS</div>
-                <div class="skill-item-3d">HTML</div>
-                <div class="skill-item-3d">Git</div>
-            </div>
-        </div>
-    </section>
-
-    <section class="education" id="education">
-        <h2 class="heading">Education</h2>
-        <div class="timeline-items">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2021 - 2025</div>
-                <div class="timeline-content">
-                    <h3>Bachelor of Technology in Computer Science & Engineering</h3>
-                    <p>Currently pursuing BTech with focus on software development and community leadership. Actively involved in various technical and community initiatives.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles-bg" id="particles-bg"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Drishya Ajith</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I'm a <span class="typing-text" id="typing-text"></span>
+                </h2>
+                <p class="hero-description">
+                    Computer Science Engineering Student & Tech Enthusiast passionate about creating innovative solutions and building inclusive tech communities.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn btn-secondary" id="resume-btn">
+                        <span>Download Resume</span>
+                        <i class="fas fa-download"></i>
+                    </a>
                 </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2019 - 2021</div>
-                <div class="timeline-content">
-                    <h3>Higher Secondary Education</h3>
-                    <p>Completed with distinction in Science stream. Developed strong foundation in mathematics and sciences that supports my technical journey.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2017 - 2019</div>
-                <div class="timeline-content">
-                    <h3>Secondary Education</h3>
-                    <p>Completed secondary education with excellent academic performance. Started developing interest in technology and community building.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="experience">
-        <h2 class="heading">Experience</h2>
-        <div class="timeline-items">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2023 - Present</div>
-                <div class="timeline-content">
-                    <h3>Community Leader</h3>
-                    <p>Leading initiatives at Tinkerhub & Global Shapers. Organized tech workshops, hackathons, and mentored junior students in programming. Advocated for gender equity in tech through various programs.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2022 - 2023</div>
-                <div class="timeline-content">
-                    <h3>Student Coordinator</h3>
-                    <p>Served as IEEE Student Branch coordinator. Coordinated technical events, seminars, and managed student chapter activities. Facilitated knowledge-sharing sessions and peer learning programs.</p>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2021 - 2022</div>
-                <div class="timeline-content">
-                    <h3>Tech Enthusiast & Learner</h3>
-                    <p>Started my journey in technology and community building. Participated in various hackathons, coding competitions, and began contributing to open-source projects.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <h2 class="heading">Projects</h2>
-        <div class="projects-box">
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x200/78CAD2/50858B?text=Project+1" alt="Project 1">
-                <h3>Student Connect Platform</h3>
-                <p>A web application built with React and Node.js that helps students connect and collaborate on projects. Features real-time messaging and project management tools.</p>
-                <div class="btn">Review Project</div>
-            </div>
-
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x200/78CAD2/50858B?text=Project+2" alt="Project 2">
-                <h3>Community Analytics Dashboard</h3>
-                <p>An AI-powered application that analyzes and provides insights on community engagement patterns. Built with Python, Machine Learning, and Flask.</p>
-                <div class="btn">Review Project</div>
-            </div>
-
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x200/78CAD2/50858B?text=Project+3" alt="Project 3">
-                <h3>Tech Learning Hub</h3>
-                <p>A comprehensive learning platform for tech enthusiasts. Features interactive tutorials, coding challenges, and progress tracking for various programming languages.</p>
-                <div class="btn">Review Project</div>
-            </div>
-
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x200/78CAD2/50858B?text=Project+4" alt="Project 4">
-                <h3>Event Management System</h3>
-                <p>A full-stack application for managing community events, workshops, and hackathons. Includes registration, scheduling, and participant management features.</p>
-                <div class="btn">Review Project</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2 class="heading">Contact Me</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Let's Connect!</h3>
-                <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and community building.</p>
-                <div class="contact-details">
-                    <div class="contact-item">
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/drishyaajith/" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/DrishyaAjith10" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:drishyaajith10@gmail.com" class="social-link" aria-label="Email">
                         <i class="fas fa-envelope"></i>
-                        <span>drishya.ajith@email.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+91 98765 43210</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Kerala, India</span>
+                    </a>
+                    <a href="https://www.instagram.com/drishyaajith/" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="main.jpg" alt="Drishya Ajith" class="profile-image">
+                        <div class="image-overlay"></div>
                     </div>
                 </div>
             </div>
-            <form class="contact-form" id="contactForm">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
 
-    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="https://via.placeholder.com/300x400/f8fafc/4ecdc4?text=About+Me" alt="About Drishya" class="about-img">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>I'm a passionate Computer Science Engineering student at Govt. Model Engineering College, dedicated to exploring the intersection of technology and innovation. With a strong foundation in programming and a keen interest in machine learning, I'm constantly seeking opportunities to grow and contribute to meaningful projects.</p>
+                    <p>Beyond academics, I'm actively involved in community building and leadership roles, serving as IEEE WiE Kerala Section LINK Coordinator and leading various tech initiatives. My background in Bharathanatyam has taught me the importance of discipline, creativity, and cultural expression.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="15">0</span>
+                            <span class="stat-label">Events Conducted</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="5">0</span>
+                            <span class="stat-label">Leadership Roles</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="10">0</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Bachelor of Technology in Computer Science Engineering</h3>
+                            <span class="timeline-date">Sept 2023 – Present</span>
+                        </div>
+                        <h4 class="timeline-institution">Govt. Model Engineering College</h4>
+                        <p class="timeline-description">
+                            Coursework: Data Structures, Logic Systems, Programming in C, Object Oriented Java
+                        </p>
+                        <div class="timeline-gpa">
+                            <span class="gpa-label">Current GPA:</span>
+                            <span class="gpa-value">9.2/10</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Senior Secondary School, CBSE</h3>
+                            <span class="timeline-date">June 2021 – March 2023</span>
+                        </div>
+                        <h4 class="timeline-institution">Bhavan's Varuna Vidyalaya</h4>
+                        <p class="timeline-description">
+                            Grade 12: 95.4%, Grade 10: 93.8%
+                        </p>
+                        <div class="timeline-achievements">
+                            <span class="achievement">Academic Excellence</span>
+                            <span class="achievement">CBSE Merit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Achievements</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card" data-aos="fade-up">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3>DRDO Summer Internship</h3>
+                            <span class="card-period">May 2025 – Present</span>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        Supervised Machine Learning, PCA Implementation
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">Machine Learning</span>
+                        <span class="tag">PCA</span>
+                        <span class="tag">Research</span>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3>Project Management Intern - Tinkerhub</h3>
+                            <span class="card-period">Jan 2025 – Mar 2025</span>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        Assisting Program Manager in community initiatives and project coordination
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">Project Management</span>
+                        <span class="tag">Community</span>
+                        <span class="tag">Leadership</span>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3>Marketing Intern at Ourea</h3>
+                            <span class="card-period">Nov 2024 – Jan 2025</span>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        Social media content creation and trend analysis
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">Marketing</span>
+                        <span class="tag">Social Media</span>
+                        <span class="tag">Analytics</span>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3>IBM Skillsbuild Internship</h3>
+                            <span class="card-period">June 2024 – August 2024</span>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        Data Analytics and Power BI visualization
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">Data Analytics</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">Visualization</span>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3>GHCI '24 Scholar</h3>
+                            <span class="card-period">2024</span>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        Selected as a scholar for the prestigious Grace Hopper Celebration India, connecting with women in technology
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">Scholarship</span>
+                        <span class="tag">Women in Tech</span>
+                        <span class="tag">Networking</span>
+                    </div>
+                </div>
+
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <div class="card-title">
+                            <h3>SheFi Scholar</h3>
+                            <span class="card-period">2024</span>
+                        </div>
+                    </div>
+                    <p class="card-description">
+                        Participating in the SheFi program, learning about blockchain and cryptocurrency from industry experts
+                    </p>
+                    <div class="card-tags">
+                        <span class="tag">Blockchain</span>
+                        <span class="tag">Cryptocurrency</span>
+                        <span class="tag">Web3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">My expertise areas</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="fade-up">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            </div>
+                            <h4 class="skill-name">Python</h4>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Programming">
+                            </div>
+                            <h4 class="skill-name">C Programming</h4>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                            </div>
+                            <h4 class="skill-name">Java</h4>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            </div>
+                            <h4 class="skill-name">HTML5</h4>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                            </div>
+                            <h4 class="skill-name">CSS3</h4>
+                        </div>
+
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="skill-icon">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                            </div>
+                            <h4 class="skill-name">SQL</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">Software & Tools</h3>
+                    <div class="tools-grid">
+                        <div class="tool-item" data-aos="fade-up">
+                            <i class="fas fa-video"></i>
+                            <span>DaVinci Resolve</span>
+                        </div>
+                        <div class="tool-item" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-music"></i>
+                            <span>Bandlab</span>
+                        </div>
+                        <div class="tool-item" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-podcast"></i>
+                            <span>Anchor Podcast</span>
+                        </div>
+                        <div class="tool-item" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">My recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-project="pranaah">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/f8fafc/ff6b6b?text=Pranaah" alt="Pranaah Project">
+                        <div class="project-overlay">
+                            <button class="view-project-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Pranaah</h3>
+                        <p class="project-description">Blood donation web application using Python Django</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Web App</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100" data-project="memory-game">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/f8fafc/4ecdc4?text=Memory+Game" alt="Memory Game Project">
+                        <div class="project-overlay">
+                            <button class="view-project-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Memory Card Game</h3>
+                        <p class="project-description">HTML, CSS, JavaScript memory testing game</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200" data-project="portfolio">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/f8fafc/6366f1?text=Portfolio" alt="Portfolio Project">
+                        <div class="project-overlay">
+                            <button class="view-project-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Portfolio</h3>
+                        <p class="project-description">Modern, responsive portfolio website with interactive animations</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="leadership">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Leadership Experience</h2>
+                <p class="section-subtitle">My leadership journey</p>
+            </div>
+            <div class="leadership-grid">
+                <div class="leadership-card" data-aos="fade-up">
+                    <div class="leadership-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/IEEE_logo.svg/1200px-IEEE_logo.svg.png" alt="IEEE">
+                    </div>
+                    <h3 class="leadership-title">IEEE WiE Kerala Section LINK Coordinator</h3>
+                    <span class="leadership-period">Jan 2025 – Present</span>
+                    <p class="leadership-description">
+                        Leading initiatives to promote women in engineering and technology
+                    </p>
+                </div>
+
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="leadership-icon">
+                        <img src="https://tinkerhub.org/wp-content/uploads/2021/03/tinkerhub-logo.png" alt="Tinkerhub">
+                    </div>
+                    <h3 class="leadership-title">Speaker and Workshop's Head of TinkerhubMEC</h3>
+                    <span class="leadership-period">Aug 2024 – Present</span>
+                    <p class="leadership-description">
+                        Conducting workshops and speaking at tech events
+                    </p>
+                </div>
+
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="leadership-icon">
+                        <img src="https://www.yiyuva.org/wp-content/uploads/2021/03/YIYuva-Logo.png" alt="YIYuva">
+                    </div>
+                    <h3 class="leadership-title">Health Co-Chair, YIYuva MEC</h3>
+                    <span class="leadership-period">Aug 2024 – Present</span>
+                    <p class="leadership-description">
+                        Promoting health and wellness initiatives among students
+                    </p>
+                </div>
+
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="leadership-icon">
+                        <img src="https://iedc.kerala.gov.in/wp-content/uploads/2021/03/IEDC-Logo.png" alt="IEDC">
+                    </div>
+                    <h3 class="leadership-title">Visual Media Team Member of IEDC MEC</h3>
+                    <span class="leadership-period">June 2024 – Present</span>
+                    <p class="leadership-description">
+                        Creating visual content and managing media presence
+                    </p>
+                </div>
+
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="leadership-icon">
+                        <img src="https://www.globalshapers.org/sites/default/files/2021-03/Global%20Shapers%20Logo.png" alt="Global Shapers">
+                    </div>
+                    <h3 class="leadership-title">Global Shapers Community Member</h3>
+                    <span class="leadership-period">2024 – Present</span>
+                    <p class="leadership-description">
+                        Contributing to global youth initiatives and community development projects
+                    </p>
+                </div>
+
+                <div class="leadership-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="leadership-icon">
+                        <img src="https://ncc.gov.in/sites/default/files/2021-03/NCC%20Logo.png" alt="NCC">
+                    </div>
+                    <h3 class="leadership-title">NCC Cadet</h3>
+                    <span class="leadership-period">2023 – Present</span>
+                    <p class="leadership-description">
+                        Developing leadership skills, discipline, and national service commitment
+                    </p>
+                </div>
+
+                <div class="leadership-more" data-aos="fade-up" data-aos-delay="600">
+                    <div class="more-content">
+                        <h3>And More...</h3>
+                        <p>Continuing to grow and take on new leadership challenges</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>drishyaajith10@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Kerala, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <h4>Connect With Me</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/drishyaajith/" class="social-btn linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/DrishyaAjith10" class="social-btn github">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="mailto:drishyaajith10@gmail.com" class="social-btn email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                            <a href="https://www.instagram.com/drishyaajith/" class="social-btn instagram">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3 class="form-title">Send Me a Message</h3>
+                    <p class="form-subtitle">I'd love to hear from you!</p>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="Project Image" id="modalImage">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDescription"></p>
+                    <div class="modal-tech" id="modalTech"></div>
+                    <div class="modal-links">
+                        <a href="#" class="btn btn-primary" id="modalLive">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                        <a href="#" class="btn btn-secondary" id="modalCode">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+    <!-- Success Notification -->
+    <div class="notification" id="notification">
+        <div class="notification-content">
+            <i class="fas fa-check-circle"></i>
+            <span id="notificationMessage"></span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="made-with-love">
+                    Made with <i class="fas fa-heart"></i> by Drishya Ajith
+                </p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
