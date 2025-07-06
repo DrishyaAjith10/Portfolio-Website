@@ -3,44 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Drishya Ajith - BTech CSE Student, Software Developer, and Community Leader">
+    <meta name="keywords" content="portfolio, software developer, student, community leader, technology">
+    <meta name="author" content="Drishya Ajith">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Drishya Ajith - Portfolio</title>
 </head>
 <body>
-    <header>
-        <a href="#" class="logo"> Drishya </a>
+    <header class="header">
+        <a href="#home" class="logo">
+            <span>Drishya</span>
+        </a>
 
-        <nav>
-            <a href="#" class="active">Home </a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Experience</a>
-            <a href="#">Project</a>
-            <a href="#">Contact</a>
+        <i class="fa fa-bars" id="menu-icons"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="main.jpg" alt="">
-        </div>
+
+    <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, it's <span>Drishya</span> </h1>
-            <h3 class="typing-text"> I'm a <span></span></h3>
-            <p> BTech CSE student passionate about creating inclusive spaces where technology, creativity, and social good meet.I work to empower students and advocate for gender equity in tech.</p>
+            <h1>Hi, it's <span>Drishya</span></h1>
+            <h3 class="text-animation">I'm a <span></span></h3>
+            <p>BTech CSE student passionate about creating inclusive spaces where technology, creativity, and social good meet. I work to empower students and advocate for gender equity in tech.</p>
             <p>Actively involved with communities like Tinkerhub, Global Shapers, Young Indians YUVA, and IEEE, contributing through event curation, peer mentoring, and knowledge-sharing initiatives.</p>
-            <p> When I’m not building or learning tech, you’ll find me immersed in Bharatanatyam, exploring new ideas, or connecting with people.</p>   
-            <p>  ✨ Always curious. Always creating.</p>   
+            <p>When I'm not building or learning tech, you'll find me immersed in Bharatanatyam, exploring new ideas, or connecting with people.</p>   
+            <p>✨ Always curious. Always creating.</p>   
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/drishyaajith/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/DrishyaAjith10"><i class="fa-brands fa-github"></i></a> 
+                <a href="https://www.linkedin.com/in/drishyaajith/" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/DrishyaAjith10" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a> 
             </div>
-            <div>
-                <a href="#" class="btn">Connect with me</a>
+            <div class="btn-group">
+                <a href="#" class="btn">Download CV</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="main.jpg" alt="Drishya Ajith - Professional headshot">
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="skills-container">
+            <div class="skills-circle">
+                <div class="skills-center">Skills</div>
+                <div class="skill-item-3d">Python</div>
+                <div class="skill-item-3d">C++</div>
+                <div class="skill-item-3d">Java</div>
+                <div class="skill-item-3d">CSS</div>
+                <div class="skill-item-3d">HTML</div>
+                <div class="skill-item-3d">Git</div>
             </div>
         </div>
     </section>
 
+    <section class="education" id="education">
+        <h2 class="heading">Education</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021 - 2025</div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Technology in Computer Science & Engineering</h3>
+                    <p>Currently pursuing BTech with focus on software development and community leadership. Actively involved in various technical and community initiatives.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2019 - 2021</div>
+                <div class="timeline-content">
+                    <h3>Higher Secondary Education</h3>
+                    <p>Completed with distinction in Science stream. Developed strong foundation in mathematics and sciences that supports my technical journey.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2017 - 2019</div>
+                <div class="timeline-content">
+                    <h3>Secondary Education</h3>
+                    <p>Completed secondary education with excellent academic performance. Started developing interest in technology and community building.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2 class="heading">Experience</h2>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2023 - Present</div>
+                <div class="timeline-content">
+                    <h3>Community Leader</h3>
+                    <p>Leading initiatives at Tinkerhub & Global Shapers. Organized tech workshops, hackathons, and mentored junior students in programming. Advocated for gender equity in tech through various programs.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022 - 2023</div>
+                <div class="timeline-content">
+                    <h3>Student Coordinator</h3>
+                    <p>Served as IEEE Student Branch coordinator. Coordinated technical events, seminars, and managed student chapter activities. Facilitated knowledge-sharing sessions and peer learning programs.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2021 - 2022</div>
+                <div class="timeline-content">
+                    <h3>Tech Enthusiast & Learner</h3>
+                    <p>Started my journey in technology and community building. Participated in various hackathons, coding competitions, and began contributing to open-source projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="projects-box">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200/78CAD2/50858B?text=Project+1" alt="Project 1">
+                <h3>Student Connect Platform</h3>
+                <p>A web application built with React and Node.js that helps students connect and collaborate on projects. Features real-time messaging and project management tools.</p>
+                <div class="btn">Review Project</div>
+            </div>
+
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200/78CAD2/50858B?text=Project+2" alt="Project 2">
+                <h3>Community Analytics Dashboard</h3>
+                <p>An AI-powered application that analyzes and provides insights on community engagement patterns. Built with Python, Machine Learning, and Flask.</p>
+                <div class="btn">Review Project</div>
+            </div>
+
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200/78CAD2/50858B?text=Project+3" alt="Project 3">
+                <h3>Tech Learning Hub</h3>
+                <p>A comprehensive learning platform for tech enthusiasts. Features interactive tutorials, coding challenges, and progress tracking for various programming languages.</p>
+                <div class="btn">Review Project</div>
+            </div>
+
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200/78CAD2/50858B?text=Project+4" alt="Project 4">
+                <h3>Event Management System</h3>
+                <p>A full-stack application for managing community events, workshops, and hackathons. Includes registration, scheduling, and participant management features.</p>
+                <div class="btn">Review Project</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="heading">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Connect!</h3>
+                <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and community building.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>drishya.ajith@email.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 98765 43210</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Kerala, India</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
