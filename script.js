@@ -23,11 +23,10 @@ const resumeBtn = document.getElementById('resume-btn');
 
 // ===== TYPING ANIMATION =====
 const typingWords = [
-    'Computer Science Student',
-    'Tech Enthusiast',
+    'Developer',
     'Community Leader',
-    'Problem Solver',
-    'Creative Thinker'
+    'Dancer',
+    'Computer Science Student'
 ];
 
 function typeWriter() {
@@ -476,6 +475,47 @@ function throttle(func, limit) {
     }
 }
 
+// ===== CAROUSEL FUNCTIONALITY =====
+function initCarousel() {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    // Event listeners
+    if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+    if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+    
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentSlide = index;
+            showSlide(currentSlide);
+        });
+    });
+
+    // Auto-advance carousel
+    setInterval(nextSlide, 5000);
+}
+
 // ===== INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', () => {
     // Hide preloader
@@ -495,6 +535,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initContactForm();
     initResumeDownload();
     initNavbarScroll();
+    initCarousel();
     
     // Event listeners
     window.addEventListener('scroll', throttle(() => {

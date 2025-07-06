@@ -2,6 +2,8 @@
 
 A stunning, modern, and highly interactive portfolio website showcasing Drishya Ajith's technical skills, projects, and achievements. Built with HTML5, CSS3, and vanilla JavaScript with smooth animations and responsive design.
 
+> **Note**: This portfolio was created with the assistance of Claude AI, demonstrating the collaborative potential of human creativity and AI technology in web development.
+
 ## 🌟 Features
 
 ### ✨ Interactive Elements
