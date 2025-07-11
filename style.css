@@ -831,13 +831,18 @@ section {
 }
 
 
-
 .achievement {
     font-size: 0.8rem;
     color: var(--accent-teal);
     background: rgba(78, 205, 196, 0.1);
     padding: 0.25rem 0.5rem;
     border-radius: 15px;
+}
+
+.timeline-achievements {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 /* ===== EXPERIENCE SECTION ===== */
