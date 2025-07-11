@@ -830,11 +830,7 @@ section {
     color: var(--accent-coral);
 }
 
-.timeline-achievements {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-}
+
 
 .achievement {
     font-size: 0.8rem;
