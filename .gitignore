@@ -1,2 +1,9 @@
-.DS_Store 
-.assets/
+# Mac junk
+.DS_Store
+
+# Node stuff
+node_modules
+
+# build output
+dist
+build
